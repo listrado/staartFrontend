@@ -24,7 +24,6 @@ function signIn(email, password) {
 
 export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState();
-    const [authJourney, setAuthJourney] = "";
 
     function logOut() {
         return signOut(auth);
@@ -35,7 +34,7 @@ export function AuthProvider({ children }) {
     };
 
     function currentJourney(journey) {
-        return authJourney = journey
+        return journey
     }
 
     useEffect(() =>{
@@ -53,7 +52,6 @@ export function AuthProvider({ children }) {
                 logOut: logOut,
                 currentUser: currentUser,
                 currentJourney: currentJourney,
-                authJourney: authJourney,
             }}
         >
             {children}

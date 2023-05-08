@@ -1,13 +1,6 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/authContext";
 
 export const Aulas = () => {
-    const { currentJourney } = useAuth();
-    const { authJourney } = useAuth();
-    const navigate = useNavigate();
-    const { currentUser } = useAuth();
-    const { state } = useLocation();
 
     async function Video(aula) {
         try {

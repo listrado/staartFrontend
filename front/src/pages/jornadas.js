@@ -1,12 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuth } from "../context/authContext";
 
 export const Jornadas = () => {
-    const { currentJourney } = useAuth();
-    const { authJourney } = useAuth();
     const navigate = useNavigate();
-    const { currentUser } = useAuth();
 
     async function setJourney(journey) {
         try {

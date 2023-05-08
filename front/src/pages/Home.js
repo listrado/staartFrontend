@@ -1,13 +1,8 @@
 import React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/authContext";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
-    const { authJourney } = useAuth();
     const navigate = useNavigate();
-    const { currentUser } = useAuth();
-    const { state } = useLocation();
-    let courses = [];
 
     async function setCourse() {
         try {

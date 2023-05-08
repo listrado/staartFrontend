@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { useAuth } from "../context/authContext";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 export const Signup = () => {
