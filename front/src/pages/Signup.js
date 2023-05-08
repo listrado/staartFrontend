@@ -72,7 +72,7 @@ export const Signup = () => {
                     Signup
                 </button>
 
-                <button className="button-block" onClick={async () => {await setCourse();} }>
+                <button className="button-block" onClick={setCourse}>
                     signin
                 </button>
             </form>
