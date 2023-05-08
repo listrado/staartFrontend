@@ -1,11 +1,23 @@
 import React, {useState} from "react";
 import { useAuth } from "../context/authContext";
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 export const Signup = () => {
     const {signUp} = useAuth();
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
+    const navigate = useNavigate();
+
+
+    async function setCourse() {
+        try {
+            navigate('/signin')
+        } catch (error) {
+            alert("error on loading page " + error);
+        }
+    };
 
     async function handleSubmit(element) {
 
@@ -58,6 +70,10 @@ export const Signup = () => {
 
                 <button className="button-block" type="submit">
                     Signup
+                </button>
+
+                <button className="button-block" onClick={async () => {await setCourse();} }>
+                    signin
                 </button>
             </form>
         </div>

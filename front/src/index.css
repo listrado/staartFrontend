@@ -46,9 +46,9 @@
   border-radius: 5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   width: 620px;
-  height: 320px;
-  margin: 1px;
-  background-color: rgb(65, 160, 163);
+  height: 300px;
+  margin: 3px;
+  background-color: rgb(14, 129, 133);
 }
 
 .box-small {
@@ -57,9 +57,9 @@
   border-radius: 5px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   width: 420px;
-  height: 90px;
-  margin: 1px;
-  background-color: rgb(65, 160, 163);
+  height: 80px;
+  margin: 2px;
+  background-color: rgb(14, 129, 133);
 }
 
 .column {

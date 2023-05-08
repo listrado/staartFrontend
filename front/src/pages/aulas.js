@@ -20,7 +20,7 @@ export const Aulas = () => {
     return(
         <div className="container text-center">
             <div>
-                <h1>course</h1>
+                <h1>classes</h1>
             </div>
             <div className="column">
                 <div className="box-small" onClick={async () => {await Video("");} }>
